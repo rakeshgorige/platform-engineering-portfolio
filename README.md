@@ -4,7 +4,7 @@
 
 This repository contains personal platform engineering builds, demonstrations, and design notes by **Rakesh Gorige** (Dallas, Texas). It is a portfolio of lab work, not a representation of production customer systems.
 
-[GitHub profile](https://github.com/rockygorge) · [LinkedIn](https://www.linkedin.com/in/rakeshg1234567/)
+[GitHub profile](https://github.com/rakeshgorige) · [LinkedIn](https://www.linkedin.com/in/rakeshg1234567/)
 
 ## Featured project: PlatformOps Board
 
