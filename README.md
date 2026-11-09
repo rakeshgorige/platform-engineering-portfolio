@@ -1,43 +1,40 @@
-# Rakesh Goriga
-### Platform and DevOps Engineer · Dallas, Texas
+# Rakesh Goriga — Platform Engineering Portfolio
 
-I work with Azure infrastructure, Terraform, CI/CD, and cloud operations. This portfolio documents my hands-on labs, the choices behind them, and what I learn while building and troubleshooting them.
+**Azure · Terraform · Kubernetes · GitHub Actions · Cloud Infrastructure**
 
-[LinkedIn](https://www.linkedin.com/in/rakeshg1234567/) · [Portfolio](https://github.com/rockygorge/RockyProject)
+This repository contains personal platform engineering builds, demonstrations, and design notes by **Rakesh Goriga** (Dallas, Texas). It is a portfolio of lab work, not a representation of production customer systems.
+
+[GitHub profile](https://github.com/rockygorge) · [LinkedIn](https://www.linkedin.com/in/rakeshg1234567/)
 
 ## Featured project: PlatformOps Board
 
-A three-tier operations dashboard with **Nginx + Python + PostgreSQL**, Kubernetes deployment manifests, Terraform-defined AKS/ACR infrastructure, and GitHub Actions CI/CD.
+A three-tier operations dashboard with **Nginx, Python, and PostgreSQL**, Kubernetes deployment manifests, Terraform-defined Azure Kubernetes Service (AKS) and Azure Container Registry (ACR), and GitHub Actions CI/CD.
 
-- Separate frontend, API, and persistent data tier.
-- OIDC-based Azure deployment, source-SHA image tags, health checks, and rollout verification.
-- Network policies, non-root application containers, resource limits, autoscaling configuration, and operational runbooks.
-- **CI verified:** PostgreSQL integration, container builds, end-to-end smoke test, restart persistence, Kubernetes schemas, and Terraform validation all passed. Azure deployment remains a documented acceptance step.
+- Separate frontend, API, and PostgreSQL tiers.
+- OIDC-based Azure deployment design, source-SHA image tags, health checks, and rollout verification.
+- Network policies, non-root containers, resource limits, autoscaling configuration, and operational runbooks.
+- **CI verified:** PostgreSQL integration, container builds, end-to-end smoke tests, restart persistence, Kubernetes schema checks, and Terraform validation.
+- **Not yet verified:** deployment to a live AKS cluster remains a documented acceptance step.
 
-**[Explore the project and run it locally](three-tier-platform/README.md)** · [Architecture](three-tier-platform/docs/architecture.md) · [Demo walkthrough](three-tier-platform/docs/demo.md) · [Verification](three-tier-platform/docs/verification.md)
+[Project README](three-tier-platform/README.md) · [Architecture](three-tier-platform/docs/architecture.md) · [Demo walkthrough](three-tier-platform/docs/demo.md) · [Verification status](three-tier-platform/docs/verification.md)
 
-## Earlier lab
+## Azure platform delivery lab
 
-### Azure platform delivery lab
-A static website provisioned with Terraform and delivered through GitHub Actions using Azure OIDC federation. The lab separates state from application resources and includes validation, a saved-plan apply, publishing, and a content smoke test.
+A Terraform-driven static website deployment with GitHub Actions and Azure OIDC federation. The design separates Terraform state from application resources and includes validation, saved-plan apply, RBAC, deployment concurrency, and a content smoke test.
 
-**Implemented:** Azure Storage static hosting · Terraform remote state · GitHub Actions · OIDC · RBAC · deployment concurrency · smoke testing
+[Architecture and engineering case study](docs/azure-platform-lab.md)
 
-[Read the architecture and engineering case study](https://github.com/rockygorge/RockyProject/blob/main/docs/azure-platform-lab.md)
+The source infrastructure repository is private; the public case study describes the implementation without disclosing account configuration.
 
-The source repository is currently private. The public case study describes the implementation without publishing account configuration.
+## Design principles
 
-## Engineering focus
+1. **Repeatable infrastructure:** declare resources, isolate state, and document provisioning boundaries.
+2. **Secure delivery:** favor short-lived identities and scoped cloud permissions.
+3. **Operability:** validate before release, record verification evidence, and document troubleshooting.
+4. **Developer experience:** provide practical runbooks and clear setup instructions.
 
-- **Repeatable infrastructure:** declared configuration, remote state, and explicit provisioning boundaries.
-- **Secure delivery:** short-lived deployment authentication and scoped cloud access.
-- **Operability:** validation, deployment checks, troubleshooting notes, and predictable cleanup.
-- **Developer experience:** setup instructions that explain both the commands and their purpose.
+## Scope and attribution
 
-## Building next
+This repository contains personal engineering and learning work. CI checks do not prove successful live cloud deployment. Course-derived or third-party content elsewhere on this account should retain appropriate attribution.
 
-I am extending my practical skills in Python automation, Kubernetes, Helm, and observability. These are learning priorities; they are not represented as completed features of the Azure lab.
-
-## Repository guide
-
-Original projects and case studies are linked here. Course forks elsewhere on my account are learning references and retain their original authorship.
+**Maintainer: Rakesh Goriga**
