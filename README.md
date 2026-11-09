@@ -1,8 +1,8 @@
-# Rakesh Goriga — Platform Engineering Portfolio
+# Rakesh Gorige — Platform Engineering Portfolio
 
 **Azure · Terraform · Kubernetes · GitHub Actions · Cloud Infrastructure**
 
-This repository contains personal platform engineering builds, demonstrations, and design notes by **Rakesh Goriga** (Dallas, Texas). It is a portfolio of lab work, not a representation of production customer systems.
+This repository contains personal platform engineering builds, demonstrations, and design notes by **Rakesh Gorige** (Dallas, Texas). It is a portfolio of lab work, not a representation of production customer systems.
 
 [GitHub profile](https://github.com/rockygorge) · [LinkedIn](https://www.linkedin.com/in/rakeshg1234567/)
 
@@ -37,4 +37,4 @@ The source infrastructure repository is private; the public case study describes
 
 This repository contains personal engineering and learning work. CI checks do not prove successful live cloud deployment. Course-derived or third-party content elsewhere on this account should retain appropriate attribution.
 
-**Maintainer: Rakesh Goriga**
+**Maintainer: Rakesh Gorige**
